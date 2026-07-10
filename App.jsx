@@ -8,7 +8,8 @@ const App = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
 
-  const API_KEY = "OPENWEATHER_API"; 
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; 
+  
 
   const fetchWeather = async () => {
     if (!city) return;
