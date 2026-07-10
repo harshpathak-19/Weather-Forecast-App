@@ -8,7 +8,7 @@ const App = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [darkMode, setDarkMode] = useState(false);
 
-  const API_KEY = "YOUR_OPENWEATHER_API_KEY"; 
+  const API_KEY = "OPENWEATHER_API"; 
 
   const fetchWeather = async () => {
     if (!city) return;
